@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 640px) {
+    /* Calendar header styles */
+    .fc .fc-toolbar-title {
+        font-size: 1rem !important;
+        padding: 4px 0;
+    }
+
+    /* Day headers (weekday names) */
+    .fc .fc-col-header-cell-cushion {
+        font-size: 0.75rem !important;
+        padding: 4px 2px !important;
+    }
+
+    /* Date numbers */
+    .fc .fc-daygrid-day-number {
+        font-size: 0.75rem !important;
+        padding: 2px 4px !important;
+    }
+}
