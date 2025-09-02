@@ -36,7 +36,7 @@ npm install
 ```
 
 3. Konfiguracja Firebase:
-Na potrzeby projektu końcowego realizowanego na kursie PAW, stworzona aplikacja skonfigurowana jest z pakietem SDK Firebase Authentication w ramach prywatnego konta gmail 
+Na potrzeby projektu końcowego realizowanego na kursie PAW, stworzona aplikacja skonfigurowana jest z pakietem SDK Firebase Authentication 
 
 4. Uruchom aplikację:
 ```bash
