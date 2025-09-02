@@ -26,7 +26,7 @@ Aplikacja do zarządzania wnioskami urlopowymi w organizacji, wykorzystująca Re
 
 1. Sklonuj repozytorium:
 ```bash
-git clone [url-repozytorium]
+git clone https://github.com/kkrzy/ewu.git
 cd ewu
 ```
 
@@ -35,10 +35,7 @@ cd ewu
 npm install
 ```
 
-3. Konfiguracja Firebase:
-Na potrzeby projektu końcowego realizowanego na kursie PAW, stworzona aplikacja skonfigurowana jest z pakietem SDK Firebase Authentication 
-
-4. Uruchom aplikację:
+3. Uruchom aplikację:
 ```bash
 npm run dev
 ```
@@ -48,14 +45,29 @@ npm run dev
 ```
 client/
 ├── src/
-│   ├── app/          # Główne komponenty aplikacji
-│   ├── assets/       # Zasoby statyczne
-│   ├── components/   # Komponenty wielokrotnego użytku
-│   ├── firebase/     # Konfiguracja Firebase
-│   ├── hooks/        # Custom hooks
-│   ├── pages/        # Komponenty stron
-│   └── types/        # Interfejsy i typy TypeScript
-└── public/           # Pliki publiczne
+│   ├── app/                # Główne komponenty aplikacji
+│   ├── assets/             # Zasoby statyczne
+│   ├── components/         # Komponenty wielokrotnego użytku
+│   ├── firebase/           # Konfiguracja Firebase
+│   ├── hooks/              # Custom hooks
+│   ├── pages/              # Komponenty stron
+│   └── types/              # Interfejsy i typy TypeScript
+└── public/                 # Pliki publiczne
+server/
+├── src/main/
+│   ├── java/com/paw/ewu/
+│   │   ├── configuration/  # Konfiguracje (Firebase, Security)
+│   │   ├── controller/     # Kontrolery REST API
+│   │   ├── dto/            # Obiekty transferu danych
+│   │   ├── entity/         # Encje bazodanowe
+│   │   ├── exception/      # Obsługa wyjątków
+│   │   ├── repository/     # Repozytoria JPA
+│   │   ├── service/        # Warstwa logiki biznesowej
+│   │   └── PawApplication.java
+│   └── resources/
+│       └── application.yml # Główna konfiguracja aplikacji
+sql/
+└── schema.sql              # Skrypt SQL tworzy tabele na bazie danych MySQL oraz wypełnia je przykładowymi danymi
 ```
 
 ## Uprawnienia
