@@ -20,7 +20,11 @@ export default function Employee(props: EmployeeProps) {
         setError(null);
         
         try {
-            updateEmployee(updatedEmployee);
+            const result = await updateEmployee(updatedEmployee);
+            if (!result.success) {
+                setError(result.message);
+                return;
+            }
             refreshEmployees();
             setError(null);
             setShowDetails(false);
@@ -71,6 +75,7 @@ export default function Employee(props: EmployeeProps) {
                     onUpdate={handleUpdate}
                     isLoading={isLoading}
                     error={error}
+                    mode="edit"
                 />
             )}
         </>

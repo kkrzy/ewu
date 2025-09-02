@@ -58,10 +58,10 @@ values
 (4,'Łukasz', 	'Nawrocki', 	'lukasz.nawrocki@firma.pl', 		'500 369 320', 'Frontend developer', 			2, 'Y80KFruPfKN9FnratzBR12mV2MC2', '2025-03-01', 'SUBORDINATE', now(), '6fLwv7AofGUbkllBQkk5rBHytjl2', 7),
 (5,'Ewa', 		'Wiśniewska', 	'ewa.wisniewska@firma.pl', 			'500 456 789', 'UX/UI designer', 				2, 'Y80KFruPfKN9FnratzBR12mV2MC2', '2025-04-01', 'SUBORDINATE', now(), 'RFO4hJb0jyTayeMtRhR5fvS2kHN2', 12),
 (6,'Piotr', 	'Zieliński', 	'piotr.zielinski@firma.pl', 		'500 567 890', 'Kierownik działu marketingu', 	3, 'OrqwrK5u0ahpujv2eJShMBPuw683', '2025-05-01', 'MANAGER', 	now(), 'lr797X3tMsQty6x1q8WGHHOkf4M2', 1),
-(7,'Alicja', 	'Wójcik', 		'alicja.wojcik@firma.pl', 			'500 678 901', 'Specjalista ds. marketingu', 	3, 'lr797X3tMsQty6x1q8WGHHOkf4M2', '2025-06-01', 'MANAGER', 	now(), 'JWI2vJuZ6uWsThrVnsHbdg4y3kS2', 23),
+(7,'Alicja', 	'Wójcik', 		'alicja.wojcik@firma.pl', 			'500 678 901', 'Specjalista ds. marketingu', 	3, 'lr797X3tMsQty6x1q8WGHHOkf4M2', '2025-06-01', 'MANAGER', 	now(), 'JWI2vJuZ6uWsThrVnsHbdg4y3kS2', 13),
 (8,'Marta',		'Lorenc', 		'marta.lorenc@firma.pl', 			'500 890 123', 'Asystentka Zarządu', 			1, 'OrqwrK5u0ahpujv2eJShMBPuw683', '2025-08-01', 'SUBORDINATE', now(), 'pnEVBvQEzTapw33HZy2VM9kldXp2', 10),
 (9,'Agnieszka', 'Kaczmarek', 	'admin@firma.pl', 					'500 901 234', 'Kierownik działu HR', 			4, 'OrqwrK5u0ahpujv2eJShMBPuw683', '2025-09-01', 'ADMIN', 		now(), 'LlrSPLWbynWZr3LQniXn4NnUkSc2', 6),
-(10,'Michał', 	'Szymański', 	'michal.szymanski@firma.pl',		'500 902 357', 'Specjalista ds. HR', 			4, 'LlrSPLWbynWZr3LQniXn4NnUkSc2', '2025-09-01', 'SUBORDINATE', now(), 'Wqgvlj3oqeaf81065ABftontZ6k2', 33);
+(10,'Michał', 	'Szymański', 	'michal.szymanski@firma.pl',		'500 902 357', 'Specjalista ds. HR', 			4, 'LlrSPLWbynWZr3LQniXn4NnUkSc2', '2025-09-01', 'SUBORDINATE', now(), 'dLAyIJTqnBUhDrzObmwm8CC9L8m2', 7);
 
 insert into department(id, description)
 values

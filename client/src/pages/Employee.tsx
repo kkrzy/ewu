@@ -15,6 +15,7 @@ export default function Employee() {
         department: ''
     });
     const [showCreateForm, setShowCreateForm] = useState(false);
+    const [error, setError] = useState<string | null>(null);
     
     const filteredEmployees = [...employees].filter(employee => {
         const fullName = `${employee.firstName} ${employee.lastName}`.toLowerCase();
@@ -44,14 +45,18 @@ export default function Employee() {
         }));
     };
     
-    const handleCreate = async (newEmployee: EmployeeProps
-    ) => {
+    const handleCreate = async (newEmployee: EmployeeProps) => {
         try {
-            addEmployee(newEmployee);
-            refreshEmployees();
-            setShowCreateForm(false);
+            const result = await addEmployee(newEmployee);
+            if (result.success) {
+                refreshEmployees();
+                setShowCreateForm(false);
+            } else {
+                setError(result.message);
+            };
         } catch (error) {
             console.error("Error creating employee:", error);
+            setError('Wystąpił błąd podczas dodawania pracownika');
         }
     };
     const [showFilters, setShowFilters] = useState(false);
@@ -154,7 +159,7 @@ export default function Employee() {
             </div>
             {showCreateForm && (
                 <EmployeeDetails 
-                employee={{
+                    employee={{
                         id: null,
                         uid: '',
                         firstName: '',
@@ -171,6 +176,7 @@ export default function Employee() {
                     onClose={() => setShowCreateForm(false)} 
                     onCreate={handleCreate} 
                     mode="create"
+                    error={error}
                 />
             )}
         </div>
