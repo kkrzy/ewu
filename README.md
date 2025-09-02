@@ -53,7 +53,7 @@ server/
 │   └── resources/
 │       └── application.yml # Główna konfiguracja aplikacji
 sql/
-└── schema.sql              # Skrypt SQL tworzy bazę dbo, tabele na bazie  oraz wypełnia tabele przykładowymi danymi
+└── schema.sql              # Skrypt SQL tworzy bazę dbo, tabele oraz wypełnia przykładowymi danymi
 ```
 
 ## Instalacja
