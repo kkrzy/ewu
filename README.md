@@ -30,12 +30,19 @@ git clone https://github.com/kkrzy/ewu.git
 cd ewu
 ```
 
-2. Zainstaluj zależności:
+2. Uruchom backend używając Maven:
 ```bash
+mvn spring-boot:run
+```
+lub uruchom projekt bezpośrednio z IDE (Intellij IDEA).
+
+3. Przejdź do folderu klienta i zainstaluj zależności:
+```bash
+cd client
 npm install
 ```
 
-3. Uruchom aplikację:
+3. Uruchom frontend:
 ```bash
 npm run dev
 ```
@@ -67,7 +74,7 @@ server/
 │   └── resources/
 │       └── application.yml # Główna konfiguracja aplikacji
 sql/
-└── schema.sql              # Skrypt SQL tworzy tabele na bazie danych MySQL oraz wypełnia je przykładowymi danymi
+└── schema.sql              # Skrypt SQL tworzy tabele na bazie danych MySQL oraz wypełnia je przykładowymi danymi (do ręcznego uruchomienia)
 ```
 
 ## Uprawnienia
