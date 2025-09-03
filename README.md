@@ -40,18 +40,18 @@ client/
 │   └── types/              # Interfejsy i typy TypeScript
 └── public/                 # Pliki publiczne
 server/
-├── src/main/
-│   ├── java/com/paw/ewu/
-│   │   ├── configuration/  # Konfiguracje (Firebase, Security)
-│   │   ├── controller/     # Kontrolery REST API
-│   │   ├── dto/            # Obiekty transferu danych
-│   │   ├── entity/         # Encje bazodanowe
-│   │   ├── exception/      # Obsługa wyjątków
-│   │   ├── repository/     # Repozytoria JPA
-│   │   ├── service/        # Warstwa logiki biznesowej
-│   │   └── PawApplication.java
-│   └── resources/
-│       └── application.yml # Główna konfiguracja aplikacji
+└── src/main/
+    ├── java/com/paw/ewu/
+    │   ├── configuration/  # Konfiguracje (Firebase, Security)
+    │   ├── controller/     # Kontrolery REST API
+    │   ├── dto/            # Obiekty transferu danych
+    │   ├── entity/         # Encje bazodanowe
+    │   ├── exception/      # Obsługa wyjątków
+    │   ├── repository/     # Repozytoria JPA
+    │   ├── service/        # Warstwa logiki biznesowej
+    │   └── PawApplication.java
+    └── resources/
+        └── application.yml # Główna konfiguracja aplikacji
 sql/
 └── schema.sql              # Skrypt SQL tworzy bazę dbo, tabele oraz wypełnia przykładowymi danymi
 ```
@@ -107,10 +107,20 @@ npm run dev
 ## Dostępne widoki
 
 - `/login` - Strona logowania
+  <img width="1094" height="600" alt="image" src="https://github.com/user-attachments/assets/8217c7ab-89d5-4f52-994e-537d88438848" />
+
 - `/` - Dashboard
+  <img width="1147" height="634" alt="image" src="https://github.com/user-attachments/assets/42aa66f2-e112-48e5-bd68-9d99b7ba3f39" />
+
 - `/employees` - Zarządzanie pracownikami
+  <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/e0231008-3730-47c5-9525-c9b2f58e298a" />
+
 - `/leaves` - Wnioski urlopowe
+  <img width="1378" height="851" alt="image" src="https://github.com/user-attachments/assets/b2b25d7f-6147-4d60-a95d-60b5ef043f91" />
+
 - `/calendar` - Kalendarz urlopów
+  <img width="1372" height="1032" alt="image" src="https://github.com/user-attachments/assets/f16c7309-903c-428a-8280-cadb8282a019" />
+
 
 ## Testowanie
 
