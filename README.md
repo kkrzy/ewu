@@ -22,9 +22,9 @@ Backend oparty na **Spring Boot + MySQL + Firebase**, frontend w **React + TypeS
 ## Uprawnienia
 
 System posiada trzy poziomy uprawnień:
-1. **Administrator** - pełny dostęp do wszystkich funkcji
-2. **Manager** - zarządzanie podwładnymi – akceptacja/odrzucenie ich wniosków
-3. **Pracownik** - składanie i przeglądanie własnych wniosków
+1. **Pracownik** - składanie i przeglądanie własnych wniosków
+2. **Manager** - zarządzanie wnioskami podwładnych – akceptacja/odrzucenie/wycofanie
+3. **Administrator** - pełny dostęp do wszystkich funkcji 
 
 ## Struktura projektu
 
@@ -112,13 +112,13 @@ npm run dev
 - `/` - Dashboard
   <img width="1147" height="634" alt="image" src="https://github.com/user-attachments/assets/42aa66f2-e112-48e5-bd68-9d99b7ba3f39" />
 
-- `/employees` - Zarządzanie pracownikami
+- `/employees` - Pracownicy
   <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/e0231008-3730-47c5-9525-c9b2f58e298a" />
 
 - `/leaves` - Wnioski urlopowe
   <img width="1378" height="851" alt="image" src="https://github.com/user-attachments/assets/b2b25d7f-6147-4d60-a95d-60b5ef043f91" />
 
-- `/calendar` - Kalendarz urlopów
+- `/calendar` - Kalendarz
   <img width="1372" height="1032" alt="image" src="https://github.com/user-attachments/assets/f16c7309-903c-428a-8280-cadb8282a019" />
 
 
@@ -126,9 +126,9 @@ npm run dev
 
 Użyj przykładowych danych logowania z sql/schema.sql:
 
-- Administrator: `admin@firma.pl / password`
 - Pracownik: `adam.nowak@firma.pl / password`
 - Manager: `jan.kowalski@firma.pl / password`
+- Administrator: `admin@firma.pl / password`
 
 Przetestuj kluczowe funkcje:
 
