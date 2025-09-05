@@ -31,18 +31,19 @@ System posiada trzy poziomy uprawnień:
 ```
 client/
 ├── src/
-│   ├── app/                # Główne komponenty aplikacji
 │   ├── assets/             # Zasoby statyczne
 │   ├── components/         # Komponenty wielokrotnego użytku
 │   ├── firebase/           # Konfiguracja Firebase
 │   ├── hooks/              # Custom hooks
 │   ├── pages/              # Komponenty stron
-│   └── types/              # Interfejsy i typy TypeScript
+│   ├── types/              # Interfejsy i typy TypeScript
+│   ├── App.tsx             # Główny komponent aplikacji
+│   └── main.tsx            # Punkt wejściowy
 └── public/                 # Pliki publiczne
 server/
 └── src/main/
     ├── java/com/paw/ewu/
-    │   ├── configuration/  # Konfiguracje (Firebase, Security)
+    │   ├── configuration/  # Konfiguracje (Firebase, CORS)
     │   ├── controller/     # Kontrolery REST API
     │   ├── dto/            # Obiekty transferu danych
     │   ├── entity/         # Encje bazodanowe
